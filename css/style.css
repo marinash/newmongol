@@ -1,0 +1,833 @@
+.icon {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon-ico-balloon {
+    width: 44px;
+    height: 65px;
+    background-position: -33px -5px;
+}
+
+.icon-ico-glasses {
+    width: 72px;
+    height: 28px;
+    background-position: -87px -5px;
+}
+
+.icon-ico-hand {
+    width: 55px;
+    height: 58px;
+    background-position: -169px -5px;
+}
+
+.icon-ico-mail {
+    width: 23px;
+    height: 18px;
+    background-position: -87px -73px;
+}
+
+.icon-ico-map-point {
+    width: 37px;
+    height: 48px;
+    background-position: -120px -73px;
+}
+
+.icon-ico-photo {
+    width: 66px;
+    height: 50px;
+    background-position: -167px -73px;
+}
+
+.icon-ico-plane {
+    width: 40px;
+    height: 41px;
+    background-position: -5px -133px;
+}
+
+.icon-ico-question {
+    width: 40px;
+    height: 37px;
+    background-position: -55px -133px;
+}
+
+.icon-ico-slider-arrow {
+    width: 21px;
+    height: 34px;
+    background-position: -105px -133px;
+}
+
+.icon-ico-socio--fb {
+    width: 22px;
+    height: 23px;
+    background-position: -136px -133px;
+}
+
+.icon-ico-socio--in {
+    width: 22px;
+    height: 23px;
+    background-position: -168px -133px;
+}
+
+.icon-ico-socio--vk {
+    width: 22px;
+    height: 23px;
+    background-position: -200px -133px;
+}
+
+.icon-ico-video-play {
+    width: 91px;
+    height: 104px;
+    background-position: -243px -5px;
+}
+
+.icon-ico-view {
+    width: 131px;
+    height: 137px;
+    background-position: -136px -166px;
+}
+
+/*модульная сетка*/
+* {
+padding:0;
+margin: 0 auto;	
+}
+.col1{ width: 8.33%;} 
+.col2{ width: 16.66%;} 
+.col3{ width: 25%;} 
+.col4{ width: 33.33%;} 
+.col5{ width: 41.66%;} 
+.col6{ width: 50%;} 
+.col7{ width: 58.33%;} 
+.col8{ width: 66.66%;} 
+.col9{ width: 75%;} 
+.col10{ width: 83.11%;} 
+.col11{ width: 91.66%;} 
+.col12{ width: 100%;}
+
+.row:after, .row:before{
+content:"";
+display: block;
+}
+.row:after {
+clear:both;	
+}
+.col {
+float: left;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0 10px;
+min-height: 1px;
+}
+.to-right {
+float: right;	
+} 
+/*кнопки*/
+.button {
+display: inline-block;
+vertical-align: top;
+text-decoration: none;
+outline: none;
+cursor: pointer;
+background: none;	
+} 
+.button--more {
+font-size: 18px;
+line-height: 22px;
+color: #fff;
+-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+padding: 9px 14px;		
+border: 1px solid #fff;
+position: relative;
+}
+.button--more::after {
+content: "";
+display: block;
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+width: 18px;
+height: 29px;
+background-position: -10px -10px;
+position: absolute;
+top: 75px;
+left: 50%;
+transform: translateX(-50%);	
+}
+.button--play {
+font-size: 0;
+border: 0;
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+width: 91px;
+height: 104px;
+background-position: -303px -10px;
+padding: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);	
+}
+.button--play:hover {
+opacity: .8;
+}
+.button__form {
+background-color: #46b0dc;
+color: #fff;
+border: none;
+border-radius: 4px;
+width: 140px;
+text-align: center;
+margin-left: 140px;
+margin-top: 40px;	
+}
+/*Заголовки*/
+.second-title {
+font-size: 32px;
+line-height: 36px;
+font-weight: 500;
+position: relative;
+margin-bottom: 20px;
+margin-top: 0;	
+}
+.second-title--center {
+text-align: center;
+display: block;
+}
+.second-title-decoration__center {
+background: #3e98d7;
+height: 6px;
+width: 60px;
+}
+.second-title-decoration {
+background: #3e98d7;
+height: 6px;
+width: 60px;
+display: inline-block;
+margin-bottom: 10px;
+}
+.third-title {
+padding: 20px 0;	
+}
+body {
+min-width: 1200px;
+font-family: "Fira Sans", "Arial", sans-serif;
+color: #444;
+font-size: 18px;
+line-height: 24px;	
+}
+/* Вопросы и ответы*/
+.faq-item {
+padding: 10px 0; 
+position: relative;	
+} 
+
+.faq-item__question {
+margin-left: 40px;
+padding-bottom: 10px;
+padding-left: 10px;	
+}
+
+.faq-item__question::before {
+content: "";
+display: block;
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+width: 40px;
+height: 37px;
+background-position: -96px -177px;
+position: absolute;
+top:0;
+left: 0;
+}
+
+.faq-item__answer {
+margin-left: 70px;
+font-style: italic;
+padding-bottom: 10px;	
+}
+
+/*container*/
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+/*навигация*/
+.main-navigation {
+padding: 20px 0;
+background-color:#2c2c2c;
+color: #fff;	
+} 
+.logo {
+font-size: 22px;
+text-decoration: none;
+color: #fff;
+}
+.main-nav {
+text-align: right;
+font-size: 0;
+}
+.main-nav-item {
+display: inline-block;
+vertical-align: top;
+margin-left: 10px;
+}
+.main-nav-link {
+text-decoration: none;
+color: #fff;
+vertical-align: top;
+font-size: 18px;
+line-height: 22px;
+padding: 5px 10px;
+border: 1px solid transparent;
+}
+.main-nav-link:hover, .main-nav-link--active {
+border: 1px solid #fff;	
+} 
+/*Промо-блок сверху*/
+.main-promo {
+padding: 170px 0 95px;
+background-image: url("../pic/bg-header.jpg");
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center top;
+text-align: center;
+color: #fff;
+position: relative;	
+}
+.main-promo .button {
+margin-top: 170px;	
+}
+.main-promo-title {
+margin: 0 auto;
+font-size: 66px;
+line-height: 70px;
+font-weight: 500;
+width: 750px;	
+}
+/* преимущества*/
+.benefits {
+padding: 60px 0 80px;	
+}
+.benefit-item {
+padding-left: 80px;
+width: 130px;
+position: relative;
+}
+.benefit-item::before {
+content: "";
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+left: 0;
+}
+.benefit-item--reliability::before {
+width: 55px;
+height: 58px;
+background-position: -112px -58px;
+top: -10px;
+}
+
+.benefit-item--learning::before {
+width: 72px;
+height: 28px;
+background-position: -112px -10px;
+top: 10px;
+}
+.benefit-item--learning {
+padding-left: 95px;	
+}
+.benefit-item--photo {
+padding-left: 90px;
+}
+.benefit-item--photo::before {
+width: 66px;
+height: 50px;
+background-position: -10px -136px;
+}
+.benefit-item--view {
+padding-left: 95px;
+}
+.benefit-item--view::before {
+width: 72px;
+height: 34px;
+background-position: -247px -134px;
+top: 5px;
+}
+
+/*about*/
+.about {
+padding: 60px 0;
+border-bottom: 1px solid #ccc;	
+}
+.about__text {
+margin: 0;
+margin-bottom: 25px;	
+}
+.about__text:last-child {
+margin-bottom: 0;
+}
+.promo-video {
+min-height: 340px;
+position: relative;	
+}
+.promo-video img {
+width: 100%;
+height: 100%;	
+}
+/*галерея*/
+.gallery {
+padding-top: 90px;
+text-align: center;	
+}
+.item {
+ width: 260px;   
+}
+
+#demo-carousel .item{
+  display: block;
+  padding: 30px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px; 
+}
+ 
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+} 
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+    left: -5%;
+    top: 40%;
+    font-size: 0;
+    background-image: url("../img/ico-slider-arrow.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    width: 21px;
+    height: 34px;  
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -5%;
+  top: 40%;
+  font-size: 0;
+  background-image: url("../img/ico-slider-arrow.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    width: 21px;
+    height: 34px;
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
+}
+
+/*как проходят полеты*/
+.promo-box {
+background-image: url("../pic/bg-mauntains.jpg");
+text-align: center;
+padding: 0 0 95px;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center top;
+position: relative;	
+}
+.flights-guide {
+position: relative;
+min-height: 500px;
+background-image: url("../img/bg-path.png");
+background-repeat: no-repeat;
+background-position:140px 170px;
+opacity: .8;  
+}
+.balloon {
+width: 110px;
+position: absolute;	
+}
+.balloon--1 {
+top: 200px;
+left: 80px;	
+}
+.balloon--2 {
+top: 130px;
+left: 338px;
+}
+.balloon--3 {
+top: 10%;
+left: 46%;
+}
+.balloon--4 {
+top: 150px;
+right: 308px;	
+}
+.balloon--5 {
+top: 190px;
+right: 30px;	
+}
+.balloon-title {
+opacity:.8;	
+}
+
+.balloon-image {
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: top;
+width: 44px;
+height: 65px;
+background-position: -48px -10px;
+color: #fff;
+padding:10px 2px;	
+}
+/*отсчет*/
+.bottom-flights-guide {
+padding: 30px 0;
+background-color: #f2f2f2;
+color: #286992;
+font-size: 32px;	
+}
+.counter {
+text-align: right;
+}
+.counter__item {
+display: inline-block;
+font-size: 32px;
+padding: 2px;	
+}
+span.counter__item {
+font-size: 22px;
+vertical-align: top;	
+}
+span.countdown-section {
+margin: 5px;    
+}
+span.countdown-period {
+margin: 5px;    
+}
+/*способы оплаты*/
+.price {
+margin-right: 25px;
+padding: 0;    
+}
+/*оплата форма*/
+.payment {
+padding: 70px 0;
+border-bottom: 1px solid #ccc;
+margin-bottom: 70px;	
+}
+.payment__text {
+padding: 10px 0;
+font-style: italic;	
+}
+.table-cell {
+display: table-cell;
+vertical-align: middle;
+float: none;    
+}
+.payment__form {
+ display: table;
+ width: 100%;   
+}
+.route {
+width: 100%;
+}
+select {
+border: 1px solid #ccc;
+width: 100%;
+background-image: url("../img/forma_tr.png");
+background-color: #fff;
+background-repeat: no-repeat;
+background-position: 98% 50%;
+margin: 10px 5px;
+-webkit-appearance: none;
+ /* for FF 
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  /* for IE */
+  -ms-appearance: none;
+  padding: 5px 5px;
+}
+label {
+width: 100%;	
+font-size: 16px;
+vertical-align: bottom;
+top: 50%;
+left: 50%;
+display: block;
+padding: 10px 5px;
+}
+
+.children {    
+text-align: right;
+}
+
+.select__middle {  
+width:100%;
+background-position: 90% 50%;	
+}
+
+input {    
+border: 1px solid #ccc;
+width: 90%;
+background-color: #fff;
+background-repeat: no-repeat;
+background-position: 2% 50%;
+margin: 10px 5px;	
+-webkit-appearance: none;
+ /* for FF */
+-moz-appearance: none;
+text-indent: 0.01px; 
+  /* for IE */
+-ms-appearance: none;
+border-radius: 3px;	
+padding: 5px 0;
+}
+
+input.family-name {    
+background-image: url("../img/forma_name.png");
+padding-left: 40px;
+color: #000;
+}
+
+input.phone {    
+background-image: url("../img/forma_phone.png");
+padding-left: 40px;
+color: #000;
+}
+
+.payment__summary-text {
+font-weight: 700;
+padding: 5px 0;
+margin-top: 30px;	
+}
+.payment__summary-number {
+font-size: 38px;
+font-weight: 500;
+text-transform: uppercase;
+color: #f97e7e;
+vertical-align: bottom;
+padding-left: 10px;
+}
+li {
+list-style-type: none;	
+}
+.email {
+text-decoration: underline;	
+color: #444;
+}
+/*Статистика*/
+.statistics {
+padding: 160px 0;
+color: #fff;
+text-align: center;
+margin: 60px 0;
+background-image: url("../pic/bg-statistic.jpg");
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center bottom;
+color: #fff;
+position: relative;	
+background-repeat: no-repeat;
+}
+.statistics-item {
+display: inline-block;
+vertical-align: top;
+width: 230px;
+}
+.statistics-item__number {
+display: table;    
+border: 5px solid #fff;
+border-radius: 50%;
+height: 150px;
+width: 150px;
+font-size: 42px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+top: 50%;
+left: 50%;
+}
+.statistics-item p span {
+ display: block;   
+}
+.statistics-item__number p{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+.statistics-item__title {
+padding: 5px 0;
+font-size: 24px;
+line-height: 1.2;
+display: block;
+text-align: center;
+vertical-align: middle;
+}
+
+/*Команда*/
+.team {
+padding: 90px 0;
+text-align: center;	
+vertical-align: top;
+}
+.team-member {
+padding: 10px;
+text-align: center;
+top: 50%;
+left: 50%;	
+}
+.team-member__photo {
+padding: 10px 0;
+width: 156px;
+height: 156px;
+top:50%;	
+}
+.team-member__name {
+font-weight: 600;
+padding: 10px 0;
+top: 50%;	
+}
+.team-member__position {
+
+}
+/*Отзывы*/
+.review-item {	
+width: 455px;	
+}
+.reviews {
+padding-bottom: 110px;
+text-align: center;	
+}
+.review-item__name {
+font-weight: 700;
+padding: 10px 0;
+font-size: 22px;	
+}
+
+.review-item__text {
+font-family: 'fira_sansitalic';	
+padding: 10px 0;
+font-style: italic;
+}
+
+/*Контакты*/
+.contacts {
+padding: 140px 0;
+background-image: url("../pic/bg-footer.jpg");
+position: relative;
+
+}
+.contacts__title {
+text-align: center;
+margin: 0 auto 50px;
+padding: 50px 0 10px;
+width: 390px;
+font-size: 26px;
+color: #444;
+}
+.contacts__title:before {
+content: "";
+display: block;
+background: #337ba0;
+border-radius: 5px;
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+width: 50px;
+height: 51px;
+vertical-align: middle;
+background-position: -181px -108px;
+position: absolute;
+left: 50%;
+top:20%;
+}	
+.airport__address {
+text-align: center;
+font-weight: normal;
+font-style: italic;
+font-size: 18px;
+color: #616161;
+vertical-align: bottom;
+padding: 10px 0;
+}
+.office {
+position: relative;	
+padding-left: 50px;
+}
+.office:before {
+content: "";
+display: block;
+width: 37px;
+height: 48px;
+background-image: url("../img/spritesheet.png");
+background-position: -204px -48px;
+background-repeat: no-repeat;
+vertical-align: middle;
+position: absolute;
+left: 0%;
+top: 0%;
+}
+.office__name {
+font-weight: 500;
+padding-bottom: 10px;
+font-size: 22px;
+color: #2b2b2b;
+}
+.office__direction, .office__hours {
+color: #525252;
+font-style: italic;
+padding-bottom: 5px;
+font-size: 20px;
+font-weight: normal;
+}
+.office__phone {
+font-size: 26px;
+color: #000;
+font-weight: normal;
+padding-top: 10px;	
+}
+.email__footer {
+position: relative;
+padding-left: 35px;
+vertical-align: bottom;
+color: #444;
+font-size: 22px;	
+}
+.email__footer:before {
+content: "";
+display: block;
+width: 23px;
+height: 18px;
+background-position: -204px -10px;
+background-image: url("../img/spritesheet.png");
+background-repeat: no-repeat;
+position: absolute;
+left: 0%;
+}
+.socbuttons {
+padding-top: 15px;	
+}
+.social-button {
+position: relative;
+display: inline-block;
+padding-right: 10px;
+}
